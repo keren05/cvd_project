@@ -5,6 +5,7 @@ This project uses machine learning to predict cardiovascular disease (CVD) risk 
 It combines clinical data, HbA1c, and ECG-derived features to evaluate whether ECG improves prediction performance.
 
 # Project Structure
+
 cvd_project/
 ├── data/
 │   ├── ECG/
@@ -33,7 +34,7 @@ cvd_project/
 └── README.md
 
 # How to Run
-'''bash
+'''bash'''
 git clone https://github.com/keren05/cvd_project.git
 cd cvd_project
 
