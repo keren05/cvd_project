@@ -1,20 +1,58 @@
-# Cardiovascular Disease Prediction
+## CVD Risk Prediction in Type 2 Diabetes
+# Overview
 
-This project predicts cardiovascular disease using machine learning techniques.
+This project uses machine learning to predict cardiovascular disease (CVD) risk in patients with Type 2 Diabetes (T2DM).
+It combines clinical data, HbA1c, and ECG-derived features to evaluate whether ECG improves prediction performance.
 
-##  Features
-- Data preprocessing & feature engineering
-- Multiple ML models
-- ROC curve analysis
-- SHAP explainability
-- Stratified evaluation
+# Project Structure
+cvd_project/
+├── data/
+│   ├── ECG/
+│   ├── RR-interval/
+│   ├── Clinical indicators.xlsx
+│   ├── Objective sleep quality.xlsx
+│   └── Subjective sleep quality.xlsx
+│
+├── outputs/
+│   ├── roc/
+│   ├── shap/
+│   ├── stratified/
+│   ├── auc_comparison.png
+│   ├── lr_metrics.png
+│   └── clean_dataset.csv
+│
+├── load_data.py
+├── feature_engineering.py
+├── models.py
+├── evaluation.py
+├── roc_curves.py
+├── shap_analysis.py
+├── stratified_analysis.py
+├── main.py
+├── .gitignore
+└── README.md
 
-##  Tech Stack
-- Python
-- Scikit-learn
-- Pandas, NumPy
-- SHAP
+# How to Run
+'''bash
+git clone https://github.com/keren05/cvd_project.git
+cd cvd_project
 
-## How to Run
-```bash
-
+pip install -r requirements.txt
+python main.py
+Methods
+Models: Logistic Regression, SVM, Random Forest, XGBoost
+Evaluation: 5-fold cross-validation (AUC, F1, Recall)
+Feature sets:
+Clinical only
+HbA1c
+ECG
+Full multimodal
+SHAP used for model interpretability
+Results
+Best model (multimodal): AUC = 0.733
+Clinical baseline: AUC = 0.696
+ECG features improved prediction more than HbA1c
+Notes
+Dataset: Cheng et al. (2023)
+Small sample size (N=60)
+Results are exploratory
