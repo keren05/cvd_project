@@ -57,7 +57,12 @@ python main.py
 
 ECG features improved prediction more than HbA1c
 
+## Dataset
+
+Cheng, W., Chen, H., Tian, L., Ma, Z., & Cui, X. (2023).  
+*Dataset on electrocardiograph, sleep and metabolic function of male type 2 diabetes mellitus*.  
+Mendeley Data, V4. https://doi.org/10.17632/9c47vwvtss.4
+
 # Notes
-**Dataset:** Cheng et al. (2023)
-**Small sample size (N=60)**
+**Small sample size** (N=60)
 Results are exploratory
