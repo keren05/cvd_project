@@ -5,7 +5,7 @@ This project uses machine learning to predict cardiovascular disease (CVD) risk 
 It combines clinical data, HbA1c, and ECG-derived features to evaluate whether ECG improves prediction performance.
 
 # Project Structure
-
+```bash
 cvd_project/
 ├── data/
 │   ├── ECG/
@@ -32,7 +32,7 @@ cvd_project/
 ├── main.py
 ├── .gitignore
 └── README.md
-
+```
 # How to Run
 
 ```bash
@@ -43,14 +43,12 @@ pip install -r requirements.txt
 python main.py
 ```
 # Methods
-Models: Logistic Regression, SVM, Random Forest, XGBoost
-Evaluation: 5-fold cross-validation (AUC, F1, Recall)
-Feature sets:
-Clinical only
-HbA1c
-ECG
-Full multimodal
-SHAP used for model interpretability
+-Models: Logistic Regression, SVM, Random Forest, XGBoost
+-Evaluation: 5-fold cross-validation (AUC, F1, Recall)
+-Feature sets:
+  -Clinical only: HbA1c, ECG
+  -Full multimodal
+-SHAP used for model interpretability
 
 # Results
 Best model (multimodal): AUC = 0.733
