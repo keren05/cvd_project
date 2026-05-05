@@ -43,12 +43,13 @@ pip install -r requirements.txt
 python main.py
 ```
 # Methods
--Models: Logistic Regression, SVM, Random Forest, XGBoost
--Evaluation: 5-fold cross-validation (AUC, F1, Recall)
--Feature sets:
-  -Clinical only: HbA1c, ECG
-  -Full multimodal
--SHAP used for model interpretability
+
+- **Models:** Logistic Regression, SVM, Random Forest, XGBoost  
+- **Evaluation:** 5-fold cross-validation (AUC, F1, Recall)  
+- **Feature Sets:**
+  - **Clinical only:** HbA1c, ECG  
+  - **Full multimodal**  
+- **Interpretability:** SHAP used for model explainability  
 
 # Results
 Best model (multimodal): AUC = 0.733
