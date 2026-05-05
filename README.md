@@ -52,12 +52,12 @@ python main.py
 - **Interpretability:** SHAP used for model explainability  
 
 # Results
-**Best model (multimodal): AUC = 0.733
-**Clinical baseline: AUC = 0.696
+**Best model (multimodal):** AUC = 0.733
+**Clinical baseline:** AUC = 0.696
 
 ECG features improved prediction more than HbA1c
 
 # Notes
-**Dataset: Cheng et al. (2023)
-**Small sample size (N=60)
+**Dataset:** Cheng et al. (2023)
+**Small sample size (N=60)**
 Results are exploratory
