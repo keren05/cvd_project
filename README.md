@@ -35,13 +35,13 @@ cvd_project/
 
 # How to Run
 
-'''bash
-git clone https://github.com/keren05/cvd_project.git
+```bash
+git clone https://github.com/your-username/cvd_project.git
 cd cvd_project
-
 pip install -r requirements.txt
+
 python main.py
-'''
+```
 # Methods
 Models: Logistic Regression, SVM, Random Forest, XGBoost
 Evaluation: 5-fold cross-validation (AUC, F1, Recall)
