@@ -34,13 +34,15 @@ cvd_project/
 └── README.md
 
 # How to Run
-'''bash'''
+
+'''bash
 git clone https://github.com/keren05/cvd_project.git
 cd cvd_project
 
 pip install -r requirements.txt
 python main.py
-Methods
+'''
+# Methods
 Models: Logistic Regression, SVM, Random Forest, XGBoost
 Evaluation: 5-fold cross-validation (AUC, F1, Recall)
 Feature sets:
@@ -49,11 +51,13 @@ HbA1c
 ECG
 Full multimodal
 SHAP used for model interpretability
-Results
+
+# Results
 Best model (multimodal): AUC = 0.733
 Clinical baseline: AUC = 0.696
 ECG features improved prediction more than HbA1c
-Notes
+
+# Notes
 Dataset: Cheng et al. (2023)
 Small sample size (N=60)
 Results are exploratory
